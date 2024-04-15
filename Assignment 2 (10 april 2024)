@@ -1,0 +1,108 @@
+1. Pseudocode and Flowchart for Sorting Algorithm - Write pseudocode and create a flowchart for a bubble sort algorithm. 
+Provide a brief explanation of how the algorithm works and a simple array of integers to demonstrate a dry run of your algorithm.
+
+Solution:Bubble Sorting
+Pseudocode:
+
+Start
+bubbleSort(A:list of sortable items)
+n=length(A)
+for i from 0 to n-1
+for j from 0 to n-1-i 
+if A[j] > A[j+1] then
+swap A[j] and A[j+1]
+End loop
+End
+
+FLOWCHART:
+
+Start
+|
+V
+Set n = length(A)
+|
+V
+for i from 0 to n-1 do
+|
+V
+for j from 0 to n-1-i do
+|
+V
+if A[j] > A[j+1] then
+|
+V
+Swap A[j] and A[j+1]
+|
+V
+End
+
+DRY RUN ON BUBBLE SORT
+For Example : 5,3,8,1,2
+
+Pass=1
+20 50 30 10 40
+20 30 50 10 40
+20 30 10 50 40
+20 30 10 40 50(no swap)
+pass=2
+20 30 10 40 50
+20 10 30 40 50(no swap)
+pass=3
+10 20 30 40 50(no swap)
+Therefore sorted array is done.
+
+Explanation:
+
+The Bubble Sort algorithm iterates through the list, comparing adjacent elements and swapping them if they're in the wrong order. 
+This process repeats until the list is sorted, with the largest unsorted element moving to its correct position in each pass. The time complexity of Bubble Sort is O(n^2).
+
+-------------------------------------------------------------------------------------------
+
+2.Recursive Function and Efficiency Analysis - Write a recursive function pseudocode and calculate the nth Fibonacci number and 
+use Big O notation to analyze its efficiency. Compare this with an iterative approach and discuss the pros and cons in terms of space 
+and time complexity.
+
+Solution:
+Fibonacci Number Pseudocode:
+Recursive approach:
+
+Start
+function fibonacci(n):
+    if n <= 1 then
+        return n
+    else
+        return fibonacci(n-1) + fibonacci(n-2)
+    end loop
+end
+
+Iterative approach:
+Start
+function fibonacci_iterative(n):
+    if n <= 1 then
+        return n
+    else
+        fib = [0, 1]
+        for i from 2 to n do
+            fib[i] = fib[i-1] + fib[i-2]
+        end for
+        return fib[n]
+    end loop
+end
+
+The iterative Fibonacci algorithm has a linear time complexity, O(n), requiring only a single pass through the loop to compute the nth Fibonacci number.
+
+Recursive Approach:
+Pros:
+- Simple implementation.
+
+Cons:
+- Exponential time complexity, inefficient for large n.
+- High space complexity due to recursive calls, risking stack overflow errors.
+
+Iterative Approach:
+Pros:
+- Linear time complexity, efficient for large n.
+- Lower space complexity compared to recursion.
+
+Cons:
+- Slightly more complex implementation than recursion.
