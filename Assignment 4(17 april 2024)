@@ -1,0 +1,131 @@
+Swapping using third variable
+
+package com;
+
+public class Swapping {
+
+	public static void main(String[] args) 
+	{
+		int a=10,b=20,c;
+		System.out.println(" Numbers before swapping a is " +a +" b is " +b);
+		c=a;
+		a=b;
+		b=c;
+		System.out.println(" Numbers after swapping a is " +a +" b is " +b);
+
+	}
+
+}
+
+************************************************************************************************************************************************
+
+Printing array elements in reverse order
+
+package arrays;
+
+public class RevArray 
+{
+
+	public static void main(String[] args) 
+	{
+		int a[]= {3,4,5,6,7};
+		for(int i=a.length-1;i>=0;i--)
+		{
+			System.out.print(a[i]+" ");
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+**************************************************************************************************************************************************
+
+Check whether the number is prime or not
+
+package com;
+import java.util.Scanner;
+
+
+public class PrimeNum 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter an integer:");
+		int n = sc.nextInt();
+		int flag =0;
+		if(n==0||n==1)
+		{
+			System.out.println(n +" is not a prime number");
+		}
+		else
+		{
+			for(int i=2;i<=n/2;i++)
+			{
+				if(n%i==0)
+				{
+					System.out.println(n+" is not prime number");
+					flag =1;
+					break;
+				}
+			}
+			if(flag==0)
+			{
+				System.out.println(n+ " is a prime number");
+			}
+		}
+	}
+}
+***********************************************************************************************************************************************************
+
+Simple Calculator using arguments
+
+package com;
+public class SimpleCalc {
+
+	public static void main(String[] args) 
+	{
+		System.out.println(args[0]+" "+ args[1]+" "+ args[2]);
+		int first = Integer.valueOf(args[0]);
+		int sec = Integer.valueOf(args[1]);
+		int third = Integer.valueOf(args[2]);
+		System.out.println(args[2]);
+		int sum = first +sec+third;
+		System.out.println(sum);
+		int sub = first - third;
+		System.out.println(sub);
+		int mul = first *sec*third;
+		System.out.println(mul);
+		int div = third/sec;
+		System.out.println(div);
+		int a=20;
+		int b=10;
+		int result;
+		char operator ='/';
+		switch(operator)
+		{
+		case '+':
+			result = a+b;
+			System.out.println(result);
+			break;
+		case '-':
+			result = a-b;
+			System.out.println(result);
+			break;
+		case '*':
+			result = a*b;
+			System.out.println(result);
+			break;
+		case '/':
+			result = a/b;
+			System.out.println(result);
+			break;
+		default:
+			System.out.println(" Invalid Operator");
+		}
+	}
+}
+***********************************************************************************************************************************************************************
+
