@@ -1,0 +1,212 @@
+public class GradeCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your score (0-100): ");
+        int score = scanner.nextInt();
+ 
+        if (score < 0 || score > 100) {
+            System.out.println("Error: Score must be between 0 and 100.");
+        } else {
+            if (score >= 90) {
+                System.out.println("Grade: A");
+            } else if (score >= 80) {
+                System.out.println("Grade: B");
+            } else if (score >= 70) {
+                System.out.println("Grade: C");
+            } else if (score >= 60) {
+                System.out.println("Grade: D");
+            } else {
+                System.out.println("Grade: F");
+            }
+        }
+ 
+        scanner.close();
+    }
+}
+
+___________________________________________________________________________________________________________
+
+public class LoopDemo {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Even Number between 1 to 50");
+		for(int i = 1;i<=50;i++) {
+			if(i%2 == 0) {
+				System.out.println(i+" ");
+			}
+		}
+		System.out.println();
+		System.out.println("Odd Number between 1 to 50");
+		int j = 1;
+		while(j<=50) {
+			if(j%2 != 0) {
+				System.out.print(j + " ");
+			}
+			j++;
+		}
+ 
+	}
+ 
+}
+
+________________________________________________________________________________________________________________
+
+class SumTwodArray
+{
+public static void main(String args[])
+{
+int a[]={{2,1,3,5,8},{6,8,3,6,5},{7,1,4,9,11},{4,9,3,2,7}};
+int sum =0;
+for(int i=0;i<a.length();i++)
+{
+for(int j=0;j<a.length();j++)
+{
+sum = sum +a[i][i];
+System.out.println(sum);
+}
+}
+}
+}
+
+__________________________________________________________________________________________________________
+
+class DisStrr
+{
+public static void main(String args[])
+{
+String[] str = {"Apple","Mango","Grapes"};
+{
+for(int i=0;i<str.length;i++)
+{
+System.out.println(str[i]);
+}
+}
+}
+}
+
+
+class Vowels
+{
+public static void main(String args[])
+{
+char[] charA = {'w','i','p','r','o'};
+for(int i=0;i<charA.length();i++)
+{
+if(charA[i]=='a'||charA[i]=='e'||charA[i]=='i'||charA[i]=='o'||charA[i]=='u')
+{
+System.out.println(charA[i]);
+}
+}
+}
+}
+
+
+
+class VowelsInString
+{
+public static void main(String args[])
+{
+String str = "education";
+for(int i=0;i<str.length();i++)
+{
+if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='o'||str.charAt(i)=='o'||str.charAt(i)=='u')
+{
+System.out.println(str.charAt(i));
+}
+}
+}
+}
+
+
+class Vowels
+{
+public static void main(String args[])
+{
+char[] charA = {'w','i','p','r','o'};
+for(int i=0;i<charA.length();i++)
+{
+if(charA[i]=='a'||charA[i]=='e'||charA[i]=='i'||charA[i]=='o'||charA[i]=='u')
+{
+System.out.println(charA[i]);
+}
+}
+}
+}
+
+
+
+class VowelsInString
+{
+public static void main(String args[])
+{
+String str = "education";
+for(int i=0;i<str.length();i++)
+{
+if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='o'||str.charAt(i)=='o'||str.charAt(i)=='u')
+{
+System.out.println(str.charAt(i));
+}
+}
+}
+}
+
+
+
+Display the names character by character
+
+
+class DisStrr
+{
+public static void main(String args[])
+{
+String[] str = {"Apple","Mango","Grapes"};
+{
+for(int i=0;i<str.length;i++)
+{
+System.out.println(str[i]);
+}
+}
+}
+}
+
+
+
+
+
+
+____________________________________________________________________________________________________________________
+
+Create  a program to store the 5 number in an array and accept a no from user to be deleted.
+class DelEle
+{
+public static void main(String args[])
+{
+int a[] ={3,1,7,8,4};
+Scanner sc = new Scanner(System.in)
+int key =sc.nextInt();
+for(int i=0;i<a.length;i++)
+{
+if(a[i]==key)
+{
+System.out.println(" The element is found at" +i);
+}
+}
+System.out.println("Array after deleting the elements");
+for(int i=0;i<a.length;i++)
+{
+int first=a[0];
+for(int j=0;j<a.length;j++)
+{
+a[j]=a[j+1];
+a[j]=first;
+}
+}
+System.out.println("");
+for(int i=0;i<a.length();i++)
+{
+System.out.println(a[i]);
+}
+}
+}
+
+__________________________________________________________________________________________________________________
